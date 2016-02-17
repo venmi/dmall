@@ -1,0 +1,18 @@
+.top{
+  height: $top-height;
+  line-height: $top-height;
+  background-color: $top-bg;
+  .left-part{
+    float: left;
+    a.goto-doubao{
+      display: inline-block;
+      *display:inline;
+      *zoom:1;
+    }
+    span.tel{}
+  }
+  .right-part{
+    float: right;
+    .sign-in,.sign-up{}
+  }
+}

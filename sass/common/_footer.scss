@@ -1,0 +1,17 @@
+.footer{
+  height: $footer-height;
+  background-color: $footer-bg;
+  color: #fff;
+  .copyright{
+    margin-top: 20px;
+    margin-right: 30px;
+    line-height: 1.5;
+    float: left;
+    padding-right: 29px;
+    border-right:1px solid $white;
+  }
+  .icp{
+    margin-top: 31px;
+    font-size: 14px;
+  }
+}

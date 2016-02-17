@@ -3,3 +3,14 @@
 
 @import "common/variables";
 @import "common/reset";
+
+@import "common/top";
+@import "common/header";
+@import "common/footer";
+
+@import "index/banner";
+@import "index/main";
+
+@import "list/productList";
+
+@import "plugins/button";
