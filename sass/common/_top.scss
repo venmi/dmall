@@ -8,11 +8,36 @@
       display: inline-block;
       *display:inline;
       *zoom:1;
+      color: $a-normal;
+      text-decoration: none;
+
+      background: url(../images/icon.png) no-repeat 0 0;
+      padding-left: 24px;
+
+      &:hover{
+        color: $a-hover;
+      }
     }
-    span.tel{}
+    span.tel{
+      display: inline-block;
+      *display: inline;
+      *zoom:1;
+      background: url(../images/icon.png) no-repeat 0 -40px;
+      padding-left: 24px;
+      margin-left: 30px;
+
+      color: $a-normal;
+    }
   }
   .right-part{
     float: right;
-    .sign-in,.sign-up{}
+    color: $a-normal;
+    a.sign-in,a.sign-up{
+      color: $orange;
+      text-decoration: none;
+      &:hover{
+        color: $orange-hover;
+      }
+    }
   }
 }
