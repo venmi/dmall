@@ -1,0 +1,37 @@
+.product-intro {
+  width: 1000px;
+  margin: 0 auto 20px;
+  @extend .clearfix;
+  background-color: $white;
+
+  .tab {
+    ul.btns {
+      height: 36px;
+      background-color: #e6e6e6;
+      font-size: 14px;
+
+      li.btn {
+        display: block;
+        float: left;
+        width: 140px;
+        line-height: 36px;
+        text-align: center;
+        cursor: pointer;
+      }
+      li.active {
+        border-top: 1px solid $orange;
+        line-height: 35px;
+        color: $orange;
+        background-color: $white;
+      }
+    }
+  }
+  ul.cont{
+    li.content{
+      display: none;
+    }
+    li.active{
+      display: block;
+    }
+  }
+}

@@ -1,3 +1,25 @@
 .button-group{
-  > .button{}
+  &:after,&:before{
+    display: table;
+    content: ' ';
+  }
+  .button{
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+
+    width: 140px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    color: $white;
+    background-color: $orange;
+    @include border-radius(36px);
+
+    &:hover{
+      background-color: $orange-hover;
+    }
+  }
 }

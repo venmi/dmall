@@ -1,0 +1,94 @@
+.form-list {
+  font-size: 14px;
+
+  dl.item {
+    margin: 0 0 10px 0;
+    padding: 0;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+
+    dt.tag {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      width: 89px;
+    }
+    dd{
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+    }
+  }
+
+  ul.property{
+    li{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+
+      width: 100px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      margin-right: 10px;
+      a{
+        display: block;
+        height: 32px;
+        text-decoration: none;
+        line-height: 32px;
+        border: 1px solid $border-color;
+        color: $gray;
+        &:hover{
+          border-color: $orange;
+        }
+      }
+      i{
+        display: none;
+      }
+      &.selected{
+        position: relative;
+        a{
+          border-color: $orange;
+        }
+        i{
+          position: absolute;
+          bottom:0;
+          right: 0;
+
+          text-indent: -9999em;
+          display: block;
+          width: 15px;
+          height: 15px;
+          background: url(../images/plugins/form/radio_select_icon.png) no-repeat;
+
+        }
+      }
+    }
+  }
+
+  input.money{
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid $border-color;
+    text-align: center;
+    margin-right: 13px;
+
+    &:focus{
+      border-color: $orange;
+    }
+  }
+  input.date{
+    width: 150px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid $border-color;
+    padding: 0 10px;
+    &:focus{
+      border-color: $orange;
+    }
+  }
+}
