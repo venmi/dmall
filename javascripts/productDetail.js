@@ -28,4 +28,14 @@ $(function() {
 
     return false;
   });
+
+
+  /**
+   * 日历插件 文档阅读
+   * https://github.com/fengyuanchen/datepicker
+   */
+
+  $('[data-toggle="datepicker"]').datepicker({
+    language: 'zh-CN'
+  });
 });
